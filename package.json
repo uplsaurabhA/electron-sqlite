@@ -1,20 +1,30 @@
 {
   "name": "my-app",
+  "description":"Test application",
   "version": "0.1.0",
+  "author":{
+    "name": "Saurabh"
+  },
   "private": true,
+  "main": "./Main.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "is-electron": "^2.2.0",
+    "node-pre-gyp": "^0.14.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.3.0",
+    "sql.js": "^1.1.0",
+    "sqlite3": "^4.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron-start": "electron ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron": "^7.1.10",
+    "electron-builder": "^22.3.2",
+    "electron-rebuild": "^1.9.0"
   }
 }
